@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Contacto - Barberia</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+                <div id="caja" >
+                    <hi><img id="logo" src="banner/imagenes/logo.png" alt="logo Barberia"></hi> 
+                    <nav>
+                        <ul id="listhead">
+                            <li class="itemshe"><a href="index.html">Home</a></li>
+                            <li class="itemshe"><a href="productos.html">Productos</a></li>
+                            <li class="itemshe"><a href="contacto.html">Contacto</a></li>
+                        </ul>
+                    </nav>
+                </div>
+        </header>
+        <main class="mainc">
+            <form id="formular">
+                <label for="nombreApellido">Nombre y Apellido</label>
+                <input type="text" id="nombreApellido" class="inputPadron" required>
+
+                <label for="correo">Correo Electronico</label>
+                <input type="email" id="correo" class="inputPadron" required placeholder="email@dominio.com">
+
+                <label for="phone">Telefono</label>
+                <input type="tel" id="phone" class="inputPadron" required placeholder="(55) 555-555-55">
+                
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje"class="inputPadron" required></textarea>
+
+                <fieldset id="elexion">  
+
+                    <legend>Como le gustaria contactarnos?</legend>
+
+                    <label for="radEmail"><input type="radio" name="contacto" id="radEmail" value="Email">Email</label>
+
+                    <label for="radtelefono"><input type="radio" name="contacto" id="radtelefono" value="Telefono">Telefono</label>
+                    
+                    <label for="radWhats"><input type="radio" name="contacto" id="radWhats" value="WhatsApp" checked>WhatsApp</label>
+                    
+                </fieldset>
+                
+                <fieldset class="horari">
+                    <legend>En que horario prefiere ser atendido?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Noche</option>
+                        <option>Tarde</option>
+                    </select>
+                </fieldset>
+                <label class="checkbox"><input type="checkbox" checked>Le gustaria recibir novedades por e-mail?</label>
+
+                <input type="submit" id="summit">
+            </form>
+
+            <table id="abierto" >
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>8h~20h</td>
+                    </tr>
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>8h~20h</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>8h~20h</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </main>
+        <footer>
+            <img src="banner/imagenes/logo-blanco.png" alt="logo Barberia">
+            <p class="copy">&copy Copyrigth Barberia - 2024</p>
+        </footer>
+    </body>
+</html>
